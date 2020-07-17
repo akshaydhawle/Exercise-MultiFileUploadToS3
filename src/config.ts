@@ -1,6 +1,6 @@
 export const AWS = {
-  REGION: "us-east-1",
-  ACCESS_KEY: "AKIAYXB3SQULX2V6V7BK",
-  SECRET_KEY: "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",
-  S3: { BUCKET: "pledger-app", ENV_FOLDER: "users" },
+  REGION: process.env.region,
+  ACCESS_KEY: process.env.access_key,
+  SECRET_KEY: process.env.secret_key,
+  S3: { BUCKET: process.env.bucket, ENV_FOLDER: process.env.folder },
 };
